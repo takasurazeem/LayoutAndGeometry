@@ -14,6 +14,7 @@
 		F946A5DC2895A87100DDD402 /* LayoutAndGeometryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F946A5DB2895A87100DDD402 /* LayoutAndGeometryTests.swift */; };
 		F946A5E62895A87100DDD402 /* LayoutAndGeometryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F946A5E52895A87100DDD402 /* LayoutAndGeometryUITests.swift */; };
 		F946A5E82895A87100DDD402 /* LayoutAndGeometryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F946A5E72895A87100DDD402 /* LayoutAndGeometryUITestsLaunchTests.swift */; };
+		F946A5F6289641DA00DDD402 /* AlignmentGuides.swift in Sources */ = {isa = PBXBuildFile; fileRef = F946A5F5289641DA00DDD402 /* AlignmentGuides.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		F946A5E12895A87100DDD402 /* LayoutAndGeometryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayoutAndGeometryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F946A5E52895A87100DDD402 /* LayoutAndGeometryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAndGeometryUITests.swift; sourceTree = "<group>"; };
 		F946A5E72895A87100DDD402 /* LayoutAndGeometryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAndGeometryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F946A5F5289641DA00DDD402 /* AlignmentGuides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGuides.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		F946A5C92895A87100DDD402 /* LayoutAndGeometry */ = {
 			isa = PBXGroup;
 			children = (
+				F946A5F42895A88000DDD402 /* Learning */,
 				F946A5CA2895A87100DDD402 /* LayoutAndGeometryApp.swift */,
 				F946A5CC2895A87100DDD402 /* ContentView.swift */,
 				F946A5CE2895A87100DDD402 /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				F946A5E72895A87100DDD402 /* LayoutAndGeometryUITestsLaunchTests.swift */,
 			);
 			path = LayoutAndGeometryUITests;
+			sourceTree = "<group>";
+		};
+		F946A5F42895A88000DDD402 /* Learning */ = {
+			isa = PBXGroup;
+			children = (
+				F946A5F5289641DA00DDD402 /* AlignmentGuides.swift */,
+			);
+			path = Learning;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F946A5CD2895A87100DDD402 /* ContentView.swift in Sources */,
+				F946A5F6289641DA00DDD402 /* AlignmentGuides.swift in Sources */,
 				F946A5CB2895A87100DDD402 /* LayoutAndGeometryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
