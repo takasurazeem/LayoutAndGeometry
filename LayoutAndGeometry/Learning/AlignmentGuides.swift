@@ -9,15 +9,13 @@ import SwiftUI
 
 struct AlignmentGuides: View {
     var body: some View {
-        HStack(alignment: .lastTextBaseline) {
-            Text("Live")
-                .font(.caption)
-            Text("long")
-            Text("and")
-                .font(.title)
-            Text("prosper")
-                .font(.largeTitle)
+        VStack(alignment: .leading) {
+            Text("Hello, world!")
+            Text("This is a longer line of text")
         }
+        .background(.green)
+        .frame(width: 400, height: 400, alignment: .center)
+        .background(.green.opacity(0.4))
     }
 }
 
