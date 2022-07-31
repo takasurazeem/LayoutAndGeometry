@@ -10,11 +10,12 @@ import SwiftUI
 struct AlignmentGuides: View {
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Hello, world!")
-                .alignmentGuide(.leading) { d in
-                    d[.trailing]
-                }
-            Text("This is a longer line of text")
+            ForEach(0..<10) { position in
+                Text("Number \(position)")
+                    .alignmentGuide(.leading) { _ in
+                        CGFloat(position) * -10
+                    }
+            }
         }
         .background(.green)
         .frame(width: 400, height: 400, alignment: .center)
