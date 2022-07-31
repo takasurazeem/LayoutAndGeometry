@@ -11,6 +11,7 @@ struct AlignmentGuides: View {
     var body: some View {
         Text("Live long and prosper")
             .frame(width: 300, height: 300, alignment: .topLeading)
+            .offset(x: 20, y: 20)
     }
 }
 
