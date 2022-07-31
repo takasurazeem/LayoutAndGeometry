@@ -10,6 +10,7 @@ import SwiftUI
 struct AbsolutePositioning: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            .background(.green.opacity(0.7))
             .position(x: 100, y: 100)
     }
 }
