@@ -9,9 +9,15 @@ import SwiftUI
 
 struct AlignmentGuides: View {
     var body: some View {
-        Text("Live long and prosper")
-            .frame(width: 300, height: 300, alignment: .topLeading)
-            .offset(x: 20, y: 20)
+        HStack(alignment: .bottom) {
+            Text("Live")
+                .font(.caption)
+            Text("long")
+            Text("and")
+                .font(.title)
+            Text("prosper")
+                .font(.largeTitle)
+        }
     }
 }
 
