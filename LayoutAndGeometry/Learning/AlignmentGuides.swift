@@ -11,6 +11,9 @@ struct AlignmentGuides: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("Hello, world!")
+                .alignmentGuide(.leading) { d in
+                    d[.trailing]
+                }
             Text("This is a longer line of text")
         }
         .background(.green)
