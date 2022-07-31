@@ -15,6 +15,7 @@
 		F946A5E62895A87100DDD402 /* LayoutAndGeometryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F946A5E52895A87100DDD402 /* LayoutAndGeometryUITests.swift */; };
 		F946A5E82895A87100DDD402 /* LayoutAndGeometryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F946A5E72895A87100DDD402 /* LayoutAndGeometryUITestsLaunchTests.swift */; };
 		F946A5F6289641DA00DDD402 /* AlignmentGuides.swift in Sources */ = {isa = PBXBuildFile; fileRef = F946A5F5289641DA00DDD402 /* AlignmentGuides.swift */; };
+		F946A5F82896552C00DDD402 /* CustomAlignmentGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F946A5F72896552C00DDD402 /* CustomAlignmentGuide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		F946A5E52895A87100DDD402 /* LayoutAndGeometryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAndGeometryUITests.swift; sourceTree = "<group>"; };
 		F946A5E72895A87100DDD402 /* LayoutAndGeometryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAndGeometryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F946A5F5289641DA00DDD402 /* AlignmentGuides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGuides.swift; sourceTree = "<group>"; };
+		F946A5F72896552C00DDD402 /* CustomAlignmentGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlignmentGuide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				F946A5F5289641DA00DDD402 /* AlignmentGuides.swift */,
+				F946A5F72896552C00DDD402 /* CustomAlignmentGuide.swift */,
 			);
 			path = Learning;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F946A5CD2895A87100DDD402 /* ContentView.swift in Sources */,
+				F946A5F82896552C00DDD402 /* CustomAlignmentGuide.swift in Sources */,
 				F946A5F6289641DA00DDD402 /* AlignmentGuides.swift in Sources */,
 				F946A5CB2895A87100DDD402 /* LayoutAndGeometryApp.swift in Sources */,
 			);
