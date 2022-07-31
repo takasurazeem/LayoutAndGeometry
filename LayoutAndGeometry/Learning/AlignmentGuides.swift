@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AlignmentGuides: View {
     var body: some View {
-        HStack(alignment: .bottom) {
+        HStack(alignment: .lastTextBaseline) {
             Text("Live")
                 .font(.caption)
             Text("long")
