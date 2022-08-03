@@ -11,16 +11,18 @@ struct ScrollViewEffectsUsingGeometryReader: View {
     let colors: [Color] = [.green, .blue, .purple, .gray]
 
     var body: some View {
-        ScrollView {
-            ForEach(0..<50) { index in
-                GeometryReader { geo in
-                    Text("Row #\(index)")
-                        .font(.title)
-                        .frame(maxWidth: .infinity)
-                        .background(colors[index % colors.count])
-                        .rotation3DEffect(.degrees(geo.frame(in: .global).minY / 5), axis: (x: 0, y: 1, z: 0))
+        GeometryReader { fullView in
+            ScrollView {
+                ForEach(0..<50) { index in
+                    GeometryReader { geo in
+                        Text("Row #\(index)")
+                            .font(.title)
+                            .frame(maxWidth: .infinity)
+                            .background(colors[index % colors.count])
+                            .rotation3DEffect(.degrees(geo.frame(in: .global).minY - fullView.size.height / 2) / 5, axis: (x: 0, y: 1, z: 0))
+                    }
+                    .frame(height: 40)
                 }
-                .frame(height: 40)
             }
         }
     }
