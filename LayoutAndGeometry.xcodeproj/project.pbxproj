@@ -18,6 +18,7 @@
 		F946A5F82896552C00DDD402 /* CustomAlignmentGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F946A5F72896552C00DDD402 /* CustomAlignmentGuide.swift */; };
 		F946A5FE2896903600DDD402 /* AbsolutePositioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = F946A5FD2896903600DDD402 /* AbsolutePositioning.swift */; };
 		F946A60028969FFA00DDD402 /* FramesAndCoordinatesInsideGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F946A5FF28969FFA00DDD402 /* FramesAndCoordinatesInsideGeometryReader.swift */; };
+		F946A604289A70F600DDD402 /* ScrollViewEffectsUsingGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F946A603289A70F600DDD402 /* ScrollViewEffectsUsingGeometryReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		F946A5F72896552C00DDD402 /* CustomAlignmentGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlignmentGuide.swift; sourceTree = "<group>"; };
 		F946A5FD2896903600DDD402 /* AbsolutePositioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsolutePositioning.swift; sourceTree = "<group>"; };
 		F946A5FF28969FFA00DDD402 /* FramesAndCoordinatesInsideGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramesAndCoordinatesInsideGeometryReader.swift; sourceTree = "<group>"; };
+		F946A603289A70F600DDD402 /* ScrollViewEffectsUsingGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewEffectsUsingGeometryReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				F946A5F72896552C00DDD402 /* CustomAlignmentGuide.swift */,
 				F946A5FD2896903600DDD402 /* AbsolutePositioning.swift */,
 				F946A5FF28969FFA00DDD402 /* FramesAndCoordinatesInsideGeometryReader.swift */,
+				F946A603289A70F600DDD402 /* ScrollViewEffectsUsingGeometryReader.swift */,
 			);
 			path = Learning;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F946A604289A70F600DDD402 /* ScrollViewEffectsUsingGeometryReader.swift in Sources */,
 				F946A5CD2895A87100DDD402 /* ContentView.swift in Sources */,
 				F946A5F82896552C00DDD402 /* CustomAlignmentGuide.swift in Sources */,
 				F946A5FE2896903600DDD402 /* AbsolutePositioning.swift in Sources */,
