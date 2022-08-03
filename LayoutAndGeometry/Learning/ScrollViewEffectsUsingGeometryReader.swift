@@ -9,19 +9,19 @@ import SwiftUI
 
 struct ScrollViewEffectsUsingGeometryReader: View {
     let colors: [Color] = [.green, .blue, .purple, .gray]
-
+    
     var body: some View {
-        GeometryReader { fullView in
-            ScrollView {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 0) {
                 ForEach(0..<50) { index in
                     GeometryReader { geo in
                         Text("Row #\(index)")
                             .font(.title)
-                            .frame(maxWidth: .infinity)
                             .background(colors[index % colors.count])
-                            .rotation3DEffect(.degrees(geo.frame(in: .global).minY - fullView.size.height / 2) / 5, axis: (x: 0, y: 1, z: 0))
+                            .rotation3DEffect(.degrees(-geo.frame(in: .global).minX) / 8, axis: (x: 0, y: 1, z: 0))
+                            .frame(width: 200, height: 200)
                     }
-                    .frame(height: 40)
+                    .frame(width: 200, height: 200)
                 }
             }
         }
