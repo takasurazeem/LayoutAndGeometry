@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct ScrollViewEffectsUsingGeometryReader: View {
-    let colors: [Color] = [.green, .blue, .purple, .gray]
+    let colors: [Color] = [.green, .blue, .gray]
     
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 0) {
+        GeometryReader { fullView in
+            ScrollView(.vertical) {
                 ForEach(0..<50) { index in
                     GeometryReader { geo in
                         Text("Row #\(index)")
                             .font(.title)
+                            .frame(maxWidth: .infinity)
                             .background(colors[index % colors.count])
-                            .rotation3DEffect(.degrees(-geo.frame(in: .global).minX) / 8, axis: (x: 0, y: 1, z: 0))
-                            .frame(width: 200, height: 200)
+                            .rotation3DEffect(.degrees(geo.frame(in: .global).minY - fullView.size.height / 2) / 5, axis: (x: 0, y: 1, z: 0))
                     }
-                    .frame(width: 200, height: 200)
+                    .frame(height: 40)
                 }
             }
         }
