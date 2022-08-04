@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ScrollViewEffectsUsingGeometryReader: View {
-    let colors: [Color] = [.green, .blue, .gray]
     
     var body: some View {
         GeometryReader { fullView in
@@ -18,7 +17,7 @@ struct ScrollViewEffectsUsingGeometryReader: View {
                         Text("Row #\(index)")
                             .font(.title)
                             .frame(maxWidth: .infinity)
-                            .background(colors[index % colors.count])
+                            .background(Color(hue: min(1, geo.frame(in: .global).minY / fullView.size.height), saturation: 1, brightness: 1))
                             .rotation3DEffect(.degrees(geo.frame(in: .global).minY - fullView.size.height / 2) / 5, axis: (x: 0, y: 1, z: 0))
                             .opacity(geo.frame(in: .global).minY / 200)
                             .scaleEffect(max(0.5, geo.frame(in: .global).minY / geo.size.height * 1.5 * 0.08))
